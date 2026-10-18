@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Головна</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="container">
+  <h1>Система автентифікації</h1>
+  <% if (user) { %>
+    <p>Вітаємо, <strong><%= user.username %></strong>!</p>
+    <p><a href="/profile">Профіль</a> <% if (user.role === "ADMIN") { %><a href="/admin">Адмін-панель</a><% } %></p>
+    <form method="post" action="/logout"><button type="submit">Вийти</button></form>
+  <% } else { %>
+    <p>Увійдіть або створіть обліковий запис.</p>
+    <a href="/login">Увійти</a> <a href="/register">Реєстрація</a>
+  <% } %>
+</main></body>
+</html>

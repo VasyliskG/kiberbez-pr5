@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Адмін-панель</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="container">
+  <h1>Адмін-панель</h1><p>Вітаємо, адміністраторе <%= user.username %>!</p>
+  <h2>Користувачі</h2><ul><% users.forEach((item) => { %><li><%= item.username %> — <%= item.role %></li><% }) %></ul>
+  <a href="/home">Головна</a> <a href="/profile">Профіль</a>
+  <form method="post" action="/logout"><button type="submit">Вийти</button></form>
+</main></body>
+</html>

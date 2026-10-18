@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Вхід</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="container">
+  <h1>Вхід</h1>
+  <% if (error) { %><p class="error"><%= error %></p><% } %>
+  <form method="post" action="/login">
+    <label for="username">Ім'я користувача</label><input id="username" name="username" required>
+    <label for="password">Пароль</label><input id="password" type="password" name="password" required>
+    <button type="submit">Увійти</button>
+  </form>
+  <a href="/register">Створити акаунт</a>
+</main></body>
+</html>

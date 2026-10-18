@@ -1,0 +1,20 @@
+[
+  {
+    "id": "cf9ea809-356a-40a2-8849-072302bfd7e1",
+    "username": "qwerty",
+    "passwordHash": "$2b$12$DG86CyDHC/.F/wX4CeA.LOyhm0QgtZXM4d4c/K0E3FOAD8P6KvCc6",
+    "role": "ADMIN"
+  },
+  {
+    "id": "ddf833cd-2744-49c8-8ef6-4216448e61d8",
+    "username": "asdfgh123",
+    "passwordHash": "$2b$12$27SJfjlsYvhQMvT2tOZ7VOUavidCuZSzPF7.TDi5cFhuVLw1yQS6y",
+    "role": "USER"
+  },
+  {
+    "id": "2775ad1e-b4d1-4c6a-ab40-1c0c013f7e9d",
+    "username": "sdf",
+    "passwordHash": "$2b$12$5BvM9A/tWK0AOFRO9hGeWeCG7Oms8L97CDZfRU25RY31Ly9k/.gfi",
+    "role": "USER"
+  }
+]

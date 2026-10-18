@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="uk">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Профіль</title><link rel="stylesheet" href="/style.css"></head>
+<body><main class="container">
+  <h1>Профіль</h1><p>Вітаємо, <%= user.username %>!</p><p>Роль: <%= user.role %></p>
+  <% if (user.lastLogin) { %><p>Останній вхід: <%= user.lastLogin %></p><% } %>
+  <a href="/home">Головна</a>
+  <form method="post" action="/logout"><button type="submit">Вийти</button></form>
+</main></body>
+</html>
