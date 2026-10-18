@@ -16,5 +16,11 @@
     "username": "sdf",
     "passwordHash": "$2b$12$5BvM9A/tWK0AOFRO9hGeWeCG7Oms8L97CDZfRU25RY31Ly9k/.gfi",
     "role": "USER"
+  },
+  {
+    "id": "70a0afd1-4939-48aa-ba15-5693c95e0201",
+    "username": "<script>alert(\"XSS\")</script>",
+    "passwordHash": "$2b$12$XJqL7AfvXQVKL.CEqFfa0eEZ/R8fD90A8kk4zx7fxXixehMmvp6..",
+    "role": "USER"
   }
 ]

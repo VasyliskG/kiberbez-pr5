@@ -11,7 +11,9 @@ function requireRole(role) {
             return res.redirect("/login");
         }
         if (req.session.user.role !== role) {
-            return res.status(403).send("Доступ заборонено");
+            return res.status(403).render("403", {
+                message: "У вас немає прав для перегляду цієї сторінки."
+            });
         }
         return next();
     };

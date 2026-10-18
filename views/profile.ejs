@@ -5,6 +5,6 @@
   <h1>Профіль</h1><p>Вітаємо, <%= user.username %>!</p><p>Роль: <%= user.role %></p>
   <% if (user.lastLogin) { %><p>Останній вхід: <%= user.lastLogin %></p><% } %>
   <a href="/home">Головна</a>
-  <form method="post" action="/logout"><button type="submit">Вийти</button></form>
+  <form method="post" action="/logout"><input type="hidden" name="_csrf" value="<%= csrfToken %>"><button type="submit">Вийти</button></form>
 </main></body>
 </html>

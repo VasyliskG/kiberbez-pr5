@@ -5,6 +5,7 @@
   <h1>Вхід</h1>
   <% if (error) { %><p class="error"><%= error %></p><% } %>
   <form method="post" action="/login">
+    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
     <label for="username">Ім'я користувача</label><input id="username" name="username" required>
     <label for="password">Пароль</label><input id="password" type="password" name="password" required>
     <button type="submit">Увійти</button>
